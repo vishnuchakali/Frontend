@@ -1,0 +1,74 @@
+package com.ATMMachine;
+import java.util.Scanner;
+public class Atm {
+	double balance;
+	String password="vishnu143";
+	boolean checkpassword(String password) {
+		boolean checkPass=false;
+		if(this.password.equals(password)) {
+			checkPass=true;
+		
+		}
+		return checkPass;
+	}
+	double checkbalance() {
+		return balance;
+	}
+    boolean withdrawAmount(double amount) {
+    	boolean success=false;
+    	if(balance>=amount) {
+    		balance-=amount;
+    				success=true;
+    	}
+    	return success;
+    }
+    boolean depositeAmount(double amount) {
+    	boolean success=false;
+    	if(amount>0) {
+    		balance+=amount;
+    		success=true;
+    	}
+    	return success;
+    }
+    
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Atm ob1=new Atm();
+		System.out.print("Enter the your password :");
+	    String pass=sc.next();  
+	    if(ob1.checkpassword(pass)==false) {
+	    	System.out.println("Invalid.... Access Denied");
+	    	return;
+	    }
+	    boolean exit=false;
+	    while(!exit) {
+	    	 System.out.println("1.Check Balance");
+			   System.out.println("2.Deposite Amount");
+			   System.out.println("3.Withdraw Amount");
+			   System.out.println("4.Exit");
+			   int op=sc.nextInt();
+			   switch(op) {
+			     case 1:System.out.println("Your Current Balance="+ob1.checkbalance());break;
+			     case 2:System.out.println("Enter Amount to Deposite:");
+			            double am1=sc.nextDouble();
+			            if(ob1.depositeAmount(am1)) {
+			            	System.out.println(am1+" is succussfully Deposited..");
+			            }else {
+			            	System.out.println(am1+" is Invalid Amount");
+			            }
+			            break;
+			     case 3:System.out.println("Enter Amount to Withdraw:");
+		                double am2=sc.nextDouble();
+		                if(ob1.withdrawAmount(am2)) {
+		            	  System.out.println(am2+" is succussfully Withdrawn..");
+		                }else {
+		            	  System.out.println("Insuffient Balance");
+		                }
+		                break;
+			     case 4:exit=true;
+			            System.out.println("Thank you for Using Our Services");  
+			            break;
+	    }
+	}
+ }
+}
