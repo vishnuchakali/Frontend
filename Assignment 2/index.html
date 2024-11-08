@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <p id="id">Please Fill Out the Form Below to Submit Your Job Application!</p>
+<div>
+    <form >
+        <label class="nn" for="Text Input">Name<span style="color: red;">*</span> </label><br>
+        <input id="Text Input" placeholder="First Name">
+        <label class="nn" for="Text Input"></label>
+        <input id="Text Input" placeholder="Last Name"><br><br>
+
+        <label class="nn" for="Email">E-mail : </label>
+        <input type="Email" id="Email" placeholder="Enter your Email" >
+
+        <label class="nn" for="number">phone Number * : </label>
+        <input type="phone number" id="number" min="0" max="9"placeholder="Enter phone Number" ><br><br><br>
+
+        <label class="nn" for="position">Applied Position : </label>
+        <input type="text" id="position" >
+
+        <label class="nn" for="date">Earliest Possible Start Date : </label>
+        <input type="Date" id="date" ><br><br>
+        
+        <label class="nn" for="interview">Preferred interview Date : </label>
+        <input type="date" id="interview" >
+
+        <label class="nn" for="time">Time : </label>
+        <input type="time" id="time" ><br><br>
+
+        <label class="nn" for="cover">cover Letter: </label><br>
+        <textarea id="cover" rows="10" cols="50">
+            </textarea><br>
+            <p id="id">Please do not exceed more than 200 words.</p><br><br>
+      
+        <label class="nn" for="uploadresume">Upload Resume : </label><br>
+        <input type="file"  id="uploadresume" rows="10" cols="50" placeholder="Upload a File"><br><br><br>
+
+        <label class="nn" for="uploadresume">Any Other Documents to Upload : </label><br>
+        <input type="file" rows="10" id="uploadresume" cols="50" placeholder="Enter your Email" ><br>
+        <p id="id">You can share certificates,dipolma etc.</p><br><br>
+        <input type="submit" value="submit Form">
+
+
+
+    </form>
+</div>
+</body>
+</html>

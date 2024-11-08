@@ -1,4 +1,3 @@
-
 h1{
     color:orange;
     background-color: blueviolet;
@@ -8,4 +7,7 @@ h1{
 }
 #idcls {
     color: skyblue;
+}
+.style{
+    background-color: pink;
 }
