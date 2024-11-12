@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            
+            
+        }
+        .griditems{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+            gap: 10px;
+            
+            
+        }
+        .griditems{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid;
+        }
+
+     
+        /*
+        .grid{
+            display: grid;
+            grid-template-columns: 100px 200px;
+            grid-template-rows: 150px 100px;
+            gap: 10px;
+            
+            
+        }
+        .griditems{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid;
+        }
+            */
+
+
+    </style>
+</head>
+<body>
+    <!--
+    <div class="container">
+        <div>Item 1 </div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+    -->
+
+    <!--
+    <div class="grid">
+        <div class="griditems">item 1</div>
+        <div class="griditems">item 2</div>
+        <div class="griditems">item 3</div>
+        <div class="griditems">item 4</div>
+        <div class="griditems">item 5</div>
+        <div class="griditems">item 6</div>
+    </div>
+    -->
+
+    
+    <div class="grid">
+        <div class="griditems">item 1</div>
+        <div class="griditems">item 2</div>
+        <div class="griditems">item 3</div>
+        <div class="griditems">item 4</div>
+        <div class="griditems">item 5</div>
+        <div class="griditems">item 6</div>
+    </div>
+    
+
+     <!--
+    <div class="grid">
+        <div class="griditems">item 1</div>
+        <div class="griditems">item 2</div>
+        <div class="griditems">item 3</div>
+        <div class="griditems">item 4</div>
+        <div class="griditems">item 5</div>
+        <div class="griditems">item 6</div>
+    </div>
+     -->
+
+</body>
+</html>
