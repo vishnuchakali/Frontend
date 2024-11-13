@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 16px;
+            background-color: aqua;
+        }
+        @media(min-width:800px){
+            body{
+                background-color: orange;
+                font-size: 18px;
+            }
+        }
+        @media(min-width:1000px){
+            body{
+                background-color: pink;
+                font-size: 20px;
+            }
+        }
+        @media(orientation:portrait){
+            body{
+                background-color:green;
+                font-size: 20px;
+            }
+        }
+        @media(orientation:landscape){
+            body{
+                background-color: blue;
+                font-size: 20px;
+            }
+        }
+        
+        /*pseudo class*/
+
+        a{
+            color:pink
+        }
+        a:hover{
+            color: orange;
+        }
+        a:focus{
+            color: aqua;
+        }
+        button{
+            color: red;
+        }
+        button:hover{
+            color: orange;
+        }
+        button:focus{
+            color: blue;
+        }
+        li:nth-child(even){
+            background-color: orange;
+        }
+        li:nth-child(3n){
+            color: red;
+        }
+
+        /*pseudo element*/
+
+        h2::before{
+            content: "*";
+            color:gold;
+        }
+        h2::after{
+            content: "*";
+            color:red;
+        }
+        p::first-letter{
+            color: pink;
+        }
+        h3::first-line{
+            color: red;
+        }
+      
+    </style>
+
+</head>
+<body>
+    <h1>Responsive Sheet with Media query</h1>
+    <p>Resize your browser window to see the background color </p>
+    <button>Click</button><br><br>
+    <a href="https://github.com/vishnuchakali/Frontend.git">GitHub Link</a>
+    <ul type="circle">
+        <li>Iteams 1</li>
+        <li>Iteams 2</li>
+        <li>Iteams 3</li>
+        <li>Iteams 4</li>
+        <li>Iteams 5</li>
+        <li>Iteams 6</li>
+    </ul>
+
+    <h2>Welcome to the site</h2>
+    <h3>pseudo class and pseudo elements</h3>
+    <p>pseudo class and pseudo elements</p>
+
+
+</body>
+</html>
