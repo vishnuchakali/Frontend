@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width:200px;
+        }
+        
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: backgroung 2s ease;
+        }
+
+        .box2:hover {
+            width: 300px;
+        }
+
+        .liner3{
+            background: radial-gradient(circle,orange,pink,red,lightblue);
+        }
+        .liner2{
+            background: conic-gradient(orange,pink,red,lightblue);
+        }
+        .liner1{
+            background: linear-gradient(to right,orange,pink,red,lightblue);
+        }
+    </style>
+</head>
+<body class="box1">
+    <div class="liner1 box"></div>
+    <div class="liner2 box"></div>
+    <div class="liner3 box"></div>
+    <div class="box2"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            background-color: pink;
+            border: 2px solid lightgray;
+            padding: 50px;
+            display: grid;
+            place-items: center;
+        }
+        .simple-shadow{
+            box-shadow: inset 5px 5px 5px rgba(119, 13, 225, 0.5);
+        }
+        .multiple{
+            box-shadow: inset 5px 5px 5px rgba(13, 225, 31, 0.5), 5px 5px 5px rgb(0,0,0,0.5)
+        }
+    </style>
+</head>
+<body>
+    <h1 class=" box multiple">Shadow Box</h1>
+</body>
+</html>
